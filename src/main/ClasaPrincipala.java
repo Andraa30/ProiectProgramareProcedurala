@@ -24,7 +24,7 @@ public class ClasaPrincipala{
 		f.Dobanda();
 		
 		ExercitiuSecunde s = new ExercitiuSecunde();
-		s.Secunde();*/
+		s.Secunde();
 		
 		Vectori v= new Vectori();
 		v.Du();
@@ -34,6 +34,15 @@ public class ClasaPrincipala{
 		v.Conv();
 		v.Aduna();
 		v.Sup();
+		
+		Persoana pers = new Persoana();
+		pers.setNume("Popa");
+		pers.setPrenume("Ramona");
+		pers.setVarsta(10);
+		
+		System.out.println("Nume: " + pers.getNume() + "\nPrenume: " + pers.getPrenume() + "\nVarsta: " + pers.getVarsta());
+		
+		pers.afiseazaDetaliiPersoana();*/
 		
 	}
 
