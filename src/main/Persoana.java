@@ -5,6 +5,25 @@ public class Persoana {
 	private String prenume;
 	private int varsta;
 	
+	public Persoana() {
+		nume = "";
+		prenume = "";
+		varsta = 0;
+	}
+	
+	public Persoana(String nume) {
+		this.nume = nume;
+		this.prenume = "";
+		this.varsta = 0;
+	}
+	
+	public Persoana(String nume, String prenume, int varsta) {
+		this.nume = nume;
+		this.prenume = prenume;
+		this.varsta = varsta;
+	}
+	
+	
 	public String getNume() {
 		return nume;
 	}
@@ -29,7 +48,7 @@ public class Persoana {
 		this.varsta = varsta;
 	}
 	
-	/*public String afiseazaDetaliiPersoana() {
-		return "nume: " + nume + "\nPrenume: " + prenume + "\nVarsta: " + varsta;
-	}*/
+	public String afiseazaDetalii() {
+		return "nume: " + nume + "; Prenume: " + prenume + "; Varsta: " + varsta;
+	}
 }

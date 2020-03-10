@@ -4,7 +4,7 @@ public class TestImobil {
 
 	public static void main(String[] args) {
 
-		Imobil imo = new Imobil();
+		/*Imobil imo = new Imobil();
 		imo.setTipCasa("apartament");
 		imo.setNrEtaje(1);
 		imo.setPret(20000);
@@ -20,7 +20,16 @@ public class TestImobil {
 		System.out.println("Imobil: " + imo1.getTipCasa() + "\nNumarEtaje: " + imo1.getNrEtaje() + "\nPret: " + imo1.getPret()+"£");
 		System.out.println();
 		System.out.println("Imobil: " + imo3.getTipCasa() + "\nNumarEtaje: " + imo3.getNrEtaje() + "\nPret: " + imo3.getPret()+"£");		
+		System.out.println();*/
+		
+		Apartament apartament1=new Apartament("apartament",2,15000);		
+		Casa casa1=new Casa("caucazian",3,20000);
+		
+		System.out.println("Imobilul "+ apartament1.getTipCasa()+ " cu "+ apartament1.getNrEtaje()+ " etaje la pretul de "+ apartament1.getPret() + "£");
+		System.out.println(apartament1.afiseazaDetalii());		
 		System.out.println();
+		System.out.println("Imobilul "+ casa1.getTipCasa()+ " cu "+ casa1.getNrEtaje()+ " etaje la pretul de "+ casa1.getPret() + "£");
+		System.out.println(casa1.afiseazaDetalii());
 
 	}
 
